@@ -77,7 +77,7 @@ public class ImageListActivity extends FragmentActivity {
             TextView tv = (TextView) findViewById(R.id.total_limit_tfd);
             tv.setText("/50");
             tv = (TextView) findViewById(R.id.title_tfd);
-            tv.setText("카메라 롤");
+            tv.setText("사진 선택");
         }
 
         gridView = (GridView) findViewById(R.id.grid_view);

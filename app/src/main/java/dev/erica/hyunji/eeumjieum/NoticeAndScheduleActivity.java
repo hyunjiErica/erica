@@ -24,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionButton;
+import com.tsengvn.typekit.TypekitContextWrapper;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -52,6 +53,11 @@ public class NoticeAndScheduleActivity extends FragmentActivity {
     ScheduleListAdapter sadapter;
     ArrayList<NoticeListItem> notice_data = new ArrayList<>();
     NoticeListAdapter nadapter;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
+    }
 
 
     @Override
